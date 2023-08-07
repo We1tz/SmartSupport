@@ -11,8 +11,8 @@ class Server
         try
         {
             // Устанавливаем сервер и начинаем прослушивать входящие соединения
-            IPAddress ipAddress = IPAddress.Parse("127.0.0.1"); // Используйте желаемый IP-адрес сервера
-            int port = 8888; // Используйте желаемый номер порта
+            IPAddress ipAddress = IPAddress.Parse("127.0.0.1"); // IP 
+            int port = 8888; 
             TcpListener listener = new TcpListener(ipAddress, port);
             listener.Start();
             Console.WriteLine("Сервер запущен. Ожидание подключения клиента...");
