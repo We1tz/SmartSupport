@@ -7,7 +7,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Diagnostics;
 
-class Server
+class ServerR
 {
     private string screenshotsPath = "C:\\Users\\105(2)\\source\\repos\\SmartVoiceAdm\\SmartVoiceAdm"; 
 
