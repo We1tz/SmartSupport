@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBIC</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="logo"></div>
+        <div class="main-block-1 main-container">
+            <div class="content-container content-container-flex">
+                <div class="main-block-1__left">
+                    <img src="img/CUBIC.png" alt="">
+                </div>
+                <div class="main-block-1__right">
+                    <div class="login-container">
+                        <h2 class="login_title">Авторизация</h2>
+                        <form class="login-form" method="post" id="loginForm">
+                            <label class="login" for="username">Логин</label>
+                            <input type="text" id="username" name="username" required>
+
+                            <label class="password" for="password">Пароль</label>
+                            <input type="password" id="password" name="password" required>
+
+                            <button class="sub-auth" type="button" onclick="submitForm()">Войти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            window.api.send('login', { username, password });
+        }
+
+        window.api.receive('login-response', (data) => {
+            if (data.success) {
+                console.log(data.message);
+            } else {
+                console.error(data.message);
+            }
+        });
+    </script>
+</body>
+
+</html>
