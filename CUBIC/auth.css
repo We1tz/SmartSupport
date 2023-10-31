@@ -47,6 +47,7 @@ a {
     background-image: url(img/bg_1920px.png);
     background-repeat: no-repeat;
     height: 1200px;
+    background-color: #020F85;
 }
 
 @media(max-width: 1440px) {
@@ -183,4 +184,23 @@ a {
 
 .sub-auth:hover {
     background-color: #0133b1;
+}
+
+.animation.element-show {
+    opacity: 1;
+    transition: all 2.4s;
+    transform: translateY(0%);
+}
+.animation {
+    opacity: 0;
+    transform: translateY(-6%);
+}
+
+input[type="text"]
+{
+    font-size:24px;
+}
+
+input[type="password"] {
+    font-size: 24px;
 }
