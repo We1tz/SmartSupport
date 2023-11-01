@@ -38,7 +38,7 @@ function createWindow() {
     win.setAlwaysOnTop(true, "screen-saver");
 
     const startUrl = process.env.ELECTRON_START_URL || url.format({
-        pathname: path.join(__dirname, '/index.html'),
+        pathname: path.join(__dirname, '/authorization.html'),
         protocol: 'file:',
         slashes: true,
     });
