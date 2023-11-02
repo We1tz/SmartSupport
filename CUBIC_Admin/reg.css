@@ -156,7 +156,7 @@ a {
     border: 1px solid #D7D7D7;
 }
 
-.first-name {
+.first_name {
     color: #0C0725;
     font-family: Montserrat;
     font-size: 18px;
@@ -165,7 +165,7 @@ a {
     line-height: 24px; /* 133.333% */
 }
 
-#first-name {
+#first_name {
     max-width: 420px;
     height: 52px;
     flex-shrink: 0;
@@ -173,7 +173,7 @@ a {
     border: 1px solid #D7D7D7;
 }
 
-.second-name {
+.second_name {
     color: #0C0725;
     font-family: Montserrat;
     font-size: 18px;
@@ -182,7 +182,7 @@ a {
     line-height: 24px; /* 133.333% */
 }
 
-#second-name {
+#second_name {
     max-width: 420px;
     height: 52px;
     flex-shrink: 0;
