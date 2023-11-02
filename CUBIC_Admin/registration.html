@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUBIC_Admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="logo"></div>
+        <div class="main-block-1 main-container">
+            <div class="content-container content-container-flex animation">
+                <div class="main-block-1__left">
+                    <img src="img/CUBIC.png" alt="">
+                </div>
+                <div class="main-block-1__right">
+                    <div class="login-container">
+                        <h2 class="login_title">Создать аккаунт</h2>
+                        <form class="login-form" method="post" id="loginForm">
+                            <label class="first-name" for="first-name">Имя</label>
+                            <input type="text" id="first-name" name="first-name" required>
+
+                            <label class="second-name" for="second-name">Фамилия</label>
+                            <input type="text" id="second-name" name="second-name" required>
+
+                            <label class="login" for="username">Логин</label>
+                            <input type="text" id="username" name="username" required>
+
+                            <label class="password" for="password">Пароль</label>
+                            <input type="password" id="password" name="password" required>
+
+                            <label class="group" for="group">Фамилия</label>
+                            <input type="text" id="group" name="group" required>
+
+                            <button class="sub-reg" type="button" onclick="submitForm()">Зарегистрироваться</button>
+                            <button class="sub-logout" type="button" onclick="">Выход</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="animate.js"></script>
+</body>
+
+</html>
