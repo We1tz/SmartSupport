@@ -44,15 +44,15 @@ a {
 }
 
 .page {
-    background-image: url(img/bg_1920px.png);
+    background-image: url(img/bg_admin_1920px.png);
     background-repeat: no-repeat;
     height: 1200px;
-    background-color: #020F85;
+    background-color: #04198D;
 }
 
 @media(max-width: 1440px) {
     .page {
-        background-image: url(img/bg_1440px.png);
+        background-image: url(img/bg_admin_1440px.png);
         background-repeat: no-repeat;
     }
 }
