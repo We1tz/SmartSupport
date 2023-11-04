@@ -113,7 +113,7 @@ a {
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px; /* 112.5% */
+    line-height: 36px; 
     margin-right: auto;
 }
 
@@ -128,7 +128,7 @@ a {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px; 
 }
 
 .password {
@@ -137,7 +137,7 @@ a {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 133.333% */
+    line-height: 24px; 
 }
 
 #username {
@@ -175,7 +175,7 @@ a {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 120% */
+    line-height: 24px; 
     border-radius: 12px;
     background: #1351F0;
     cursor: pointer;
