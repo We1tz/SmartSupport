@@ -1,6 +1,0 @@
-**/*.md
-**/*.svg
-**/*.html
-**/*.ejs
-package.json
-.babelrc
