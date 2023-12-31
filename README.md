@@ -8,4 +8,5 @@
   npm install url
   npm install sqlite3
   npm install node-telegram-bot-api
-3. Запуск через npm run electron
+3. Установка библиотеки react js
+4. Запуск через npm run electron
