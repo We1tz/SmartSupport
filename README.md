@@ -25,11 +25,11 @@
   - Нам нужно чтобы, при разработке использовался localhost:3000, а в продакшн ссылался на собранный файл html
     Соответственно меняем файл main.js, добавляя строку:
 
-      const startUrl = process.env.ELECTRON_START_URL || url.format({
-        pathname: path.join(__dirname, '../index.html'),
-        protocol: 'file:',
-        slashes: true
-      });
+      const startUrl = process.env.ELECTRON_START_URL || url.format({  
+        pathname: path.join(__dirname, '../index.html'),  
+        protocol: 'file:',  
+        slashes: true  
+      });  
       mainWindow.loadURL(startUrl);
   - В файле package.json в scripts изменяем строку start — для того чтобы не запускался в браузере
     "start": "export BROWSER=none && react-scripts start"
