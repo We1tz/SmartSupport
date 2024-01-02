@@ -77,4 +77,9 @@
           "owner": "johndyer24"
         }
       }
+  - Добавляем иконку приложения
+    Для добавления иконки приложения, копируем файл icon.png в папку build размером 512 на 512 пикселей.
+    Подробнее можно почитать здесь https://www.electron.build/icons
+    В файл package.json добавляем строку icon в build
+    "icon": "build/icon.png"
 4. Запуск через npm run electron
