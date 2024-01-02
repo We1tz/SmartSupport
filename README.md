@@ -104,59 +104,59 @@
       "author": {  
         "name" : "Лалаян Рафик",  
         "email": "rafl9@mail.ru",  
-        "url": "https://rafl.ru"
-      },
-      "main": "electron/main.js",
-      "productName": "ДП - Управление базами PostgreSql",
-      "scripts": {
-        "start": "export BROWSER=none && react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "electron": "electron .",
-        "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
-        "build-electron": "mkdir build/electron && cp -r electron/. build/electron",
-        "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
-      },
-      "eslintConfig": {
-        "extends": "react-app"
-      },
-      "browserslist": {
-        "production": [
-          ">0.2%",
-          "not dead",
-          "not op_mini all"
-        ],
-        "development": [
-          "last 1 chrome version",
-          "last 1 firefox version",
-          "last 1 safari version"
-        ]
-      },
-      "devDependencies": {
-        "electron": "^9.1.1",
-        "electron-builder": "^22.7.0",
-        "redux-logger": "^3.0.6"
-      },
-      "build": {
-        "win" : {
-          "icon" : "build/icon.ico"
-        },
-        "mac" : {
-          "icon" : "build/icon.png"
-        },
-        "files": [
-          "build/**/*",
-          "node_modules/**/*"
-        ],
-        "publish": {
-          "provider": "github",
-          "repo": "SmartSupport",
-          "owner": "Weitz"
-        }
-      }
-    }
-    Запускаем:
+        "url": "https://rafl.ru"  
+      },  
+      "main": "electron/main.js",  
+      "productName": "ДП - Управление базами PostgreSql",  
+      "scripts": {  
+        "start": "export BROWSER=none && react-scripts start",  
+        "build": "react-scripts build",  
+        "test": "react-scripts test",  
+        "eject": "react-scripts eject",  
+        "electron": "electron .",  
+        "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",  
+        "build-electron": "mkdir build/electron && cp -r electron/. build/electron",  
+        "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"  
+      },  
+      "eslintConfig": {  
+        "extends": "react-app"  
+      },  
+      "browserslist": {  
+        "production": [  
+          ">0.2%",  
+          "not dead",   
+          "not op_mini all"  
+        ],  
+        "development": [  
+          "last 1 chrome version",  
+          "last 1 firefox version",  
+          "last 1 safari version"  
+        ]  
+      },  
+      "devDependencies": {  
+        "electron": "^9.1.1",  
+        "electron-builder": "^22.7.0",  
+        "redux-logger": "^3.0.6"  
+      },  
+      "build": {  
+        "win" : {  
+          "icon" : "build/icon.ico"  
+        },  
+        "mac" : {  
+          "icon" : "build/icon.png"  
+        },  
+        "files": [  
+          "build/**/*",  
+          "node_modules/**/*"  
+        ],  
+        "publish": {  
+          "provider": "github",  
+          "repo": "SmartSupport",  
+          "owner": "Weitz"  
+        }  
+      }  
+    }  
+    Запускаем:  
 
-    npm run package
+    npm run package  
     Проект создастся в папке dist. 
