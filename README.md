@@ -103,8 +103,7 @@
       },  
       "author": {  
         "name" : "Лалаян Рафик",  
-        "email": "rafl9@mail.ru",  
-        "url": "https://rafl.ru"  
+        "email": "rafl9@mail.ru",    
       },  
       "main": "electron/main.js",  
       "productName": "ДП - Управление базами PostgreSql",  
