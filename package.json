@@ -12,7 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   "main": "electron/main.js",
-  "productName": "Пример приложения Electron Create React",
+  "productName": "КУБИК",
   "homepage": "./",
   "scripts": {
     "start": "set BROWSER=none && react-scripts start",
