@@ -44,5 +44,13 @@
   - Теперь запуск проекта для разработки будет такими двумя командами:
     npm start
     npm run electron-dev
-    
+  - Доступ к Electron из приложения в React
+    Добавляем такой код в приложение React:
+
+    const electron = window.require('electron');
+    const ipcRenderer  = electron.ipcRenderer;
+    После этого можно пользоваться ipcRender.
+
+    Соответственно после этого в браузере перестает работать, а работает только через Electron.
+  
 4. Запуск через npm run electron
