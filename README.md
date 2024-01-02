@@ -32,9 +32,11 @@
       });
       mainWindow.loadURL(startUrl);
   - В файле package.json в scripts изменяем строку start — для того чтобы не запускался в браузере
+    "start": "export BROWSER=none && react-scripts start"
     Для винды она будет выглядеть так:
     "start": "set BROWSER=none && react-scripts start"
   - В файл package.json добавляем строку в scripts
+    "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron ."
     Для винды это так:
     ”electron-dev”: "set ELECTRON_START_URL=http://localhost:3000 && electron .”
   - Также в package.json, добавляем строку:
@@ -43,5 +45,4 @@
     npm start
     npm run electron-dev
     
-
 4. Запуск через npm run electron
