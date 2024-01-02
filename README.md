@@ -52,7 +52,7 @@
     После этого можно пользоваться ipcRender.
 
     Соответственно после этого в браузере перестает работать, а работает только через Electron.
-  - Билдим все это хозяйство в продакшн
+  - Билдим все в продакшн
     Для начала запускаем build react
     npm run build
   - Добавляем в package.json в scripts:
@@ -61,4 +61,20 @@
     "build-electron": "mkdir build/electron && robocopy electron build/electron /S"
   - Запускаем этот скрипт:
     npm run build-electron
+  - Устанавливаем electron-builder
+    npm install --save-dev electron-builder
+    Добавляем еще строку в package.json в scripts
+    "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
+  - Также добавляем в package.json
+      "build": {
+        "files": [
+          "build/**/*",
+          "node_modules/**/*"
+        ],
+        "publish": {
+          "provider": "github",
+          "repo": "electron-cra-example",
+          "owner": "johndyer24"
+        }
+      }
 4. Запуск через npm run electron
