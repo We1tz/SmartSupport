@@ -82,4 +82,81 @@
     Подробнее можно почитать здесь https://www.electron.build/icons
     В файл package.json добавляем строку icon в build
     "icon": "build/icon.png"
-4. Запуск через npm run electron
+  - Итого файл package.json получается примерно такой:
+
+    {
+      "name": "dp-upravlenie-postgres",
+      "version": "0.1.0",
+      "private": true,
+      "homepage": "./",
+      "dependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "pg": "^8.3.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-redux": "^7.2.0",
+        "react-scripts": "3.4.1",
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0"
+      },
+      "author": {
+        "name" : "Дмитрий Поляков",
+        "email": "info@polyakovdmitriy.ru",
+        "url": "https://polyakovdmitriy.ru"
+      },
+      "main": "electron/main.js",
+      "productName": "ДП - Управление базами PostgreSql",
+      "scripts": {
+        "start": "export BROWSER=none && react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "electron": "electron .",
+        "electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
+        "build-electron": "mkdir build/electron && cp -r electron/. build/electron",
+        "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
+      },
+      "eslintConfig": {
+        "extends": "react-app"
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      },
+      "devDependencies": {
+        "electron": "^9.1.1",
+        "electron-builder": "^22.7.0",
+        "redux-logger": "^3.0.6"
+      },
+      "build": {
+        "win" : {
+          "icon" : "build/icon.ico"
+        },
+        "mac" : {
+          "icon" : "build/icon.png"
+        },
+        "files": [
+          "build/**/*",
+          "node_modules/**/*"
+        ],
+        "publish": {
+          "provider": "github",
+          "repo": "electron-cra-example",
+          "owner": "johndyer24"
+        }
+      }
+    }
+    Запускаем:
+
+    npm run package
+    Проект создастся в папке dist. 
