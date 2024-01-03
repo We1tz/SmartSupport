@@ -55,5 +55,10 @@
   - Билдим все это хозяйство в продакшн
     Для начала запускаем build react
     npm run build
-  
+  - Добавляем в package.json в scripts:
+    "build-electron": "mkdir build/electron && cp -r electron/. build/electron",
+    Для винды это будет так:
+    "build-electron": "mkdir build/electron && robocopy electron build/electron /S"
+  - Запускаем этот скрипт:
+    npm run build-electron
 4. Запуск через npm run electron
