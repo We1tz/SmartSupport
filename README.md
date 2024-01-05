@@ -1,7 +1,7 @@
 # SmartSupport
 
 ## Установка
-1. Установка Node.js - https://nodejs.org/en  
+1. Установка Node.js - https://nodejs.org/en   
 2. Установка зависимостей в командную строку в раздел с проектом:  
   - npm install electron --save-dev  
   - npm install path  
