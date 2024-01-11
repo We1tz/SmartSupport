@@ -1,0 +1,66 @@
+:root {
+    --width: 0;
+    --margin: 0;
+}
+
+.own-carousel__outer {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+
+.own-carousel {
+    display: flex;
+}
+
+.own-carousel__item {
+    flex-shrink: 0;
+    overflow: hidden;
+    flex-basis: var(--width);
+}
+
+.own-carousel__item:not(:first-child) {
+    margin-left: var(--margin);
+}
+
+html, body, div, span, object, iframe, menu, h1, h2, h3, h4, p, button, td, tr, tbody, ul, li, dl, dd, dt, figure {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    cursor: inherit;
+    user-select: inherit;
+    box-sizing: border-box;
+    transition: background-color 0.15s linear 0s, color 0.15s linear 0s;
+}
+
+body {
+    font-size: 16px;
+    overflow-y: scroll;
+    min-width: 300px;
+    height: 100%;
+    font-family: Montserrat, "Fira sans", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    letter-spacing: 0.03em;
+}
+
+input, select {
+    border-radius: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+input, textarea {
+    appearance: none;
+}
+
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.15s ease 0s;
+}
