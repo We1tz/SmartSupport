@@ -64,3 +64,16 @@ a {
     color: var(--link-color);
     transition: color 0.15s ease 0s;
 }
+
+.content-container {
+    max-width: 1660px;
+    margin: auto;
+    padding: 0px 12px;
+}
+
+.content-container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

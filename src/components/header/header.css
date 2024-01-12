@@ -1,0 +1,10 @@
+header.main-container {
+    padding: 24px 18px;
+    background-color: #000176;
+}
+
+.header_left_logo_container {
+    background: url(/src/images/logo.svg) no-repeat;
+    width: 48px;
+    height: 64px;
+}

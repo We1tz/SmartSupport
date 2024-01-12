@@ -2,9 +2,15 @@ import './header.css'
 
 const Header = () => {
     return (
-      <header>
-        <h1>Salamchik</h1>
-      </header>
+      <header className="header main-container">
+
+        <div className="content-container content-container-flex">
+            <div className='header_left_logo_container'></div>
+            <div className="header__function_bar">
+              
+            </div>
+        </div>
+    </header>
     );
   };
 
